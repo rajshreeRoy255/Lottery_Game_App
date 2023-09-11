@@ -1,0 +1,78 @@
+.customDividedBox{
+    display:"flex";
+    justify-content: center;
+    min-height: 50vh;
+    margin-bottom: 16px;
+    margin-top: 33px;
+}
+
+.custombtn{
+    min-width: 60%;
+    margin-top: 5px 0px;
+}
+
+.scoreTitle{
+    margin-top: 66px;
+    padding: 20px 0px;
+}
+
+.strongScore{
+    font-size: 27px;
+}
+.inputNumber{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.humanIcon{
+    display: block;
+    font-size: 90px;
+}
+.BlueHuman{
+color: blue;
+}
+.Redhuman{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

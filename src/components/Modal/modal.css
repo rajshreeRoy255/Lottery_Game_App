@@ -1,0 +1,88 @@
+.custumWhite{
+    color: white;
+}
+.customBody{
+    /* border: 2px solid orange; */
+    height: 40vh;
+}
+
+.customChat{
+    /* border: 2px solid green; */
+    margin-left: 20%;
+    
+}
+.outputBox{
+    height: 10vh;
+    
+}
+
+
+
+
+/* bot section */
+.message{
+    /* border: 2px solid green; */
+    text-align: right;
+    
+}
+.botIcon{
+    /* border: 2px solid red; */
+    
+}
+.botIcon i{
+    font-size: 20px;
+    
+}
+
+/* robot section ends */
+
+
+
+
+
+
+
+/* human section */
+.selectSection{
+    /* border: 2px solid red; */
+
+    
+}
+
+.HumanIcon{
+    /* border: 2px solid green; */
+    font-size: 40px;
+    padding-left: 53%;
+    position: relative;
+    left: 40%;
+}
+/* human section ends */
+
+
+
+.container{
+    display: inline-block;
+}
+.text{
+    letter-spacing: 2px;
+    border-right: 5px solid;
+    width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(10),
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+@keyframes typing{
+    from {width:0}
+}
+
+
+/* header */
+.Header-main{
+    height: 50vh;
+    border: 2px solid red;
+}
+/* header */

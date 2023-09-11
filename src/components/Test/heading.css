@@ -1,0 +1,11 @@
+.headingLot{
+    /* border: 2px solid red; */
+    width: 600px;
+    margin-left: 12%;
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+}
+.para_msg{
+    color: #B53471;
+    font-size: 20px;
+}

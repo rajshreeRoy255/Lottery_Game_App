@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Zilla+Slab&display=swap');
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* custom css */
+
+button {
+  cursor: pointer;
+}
+
+
+/* navbar */
+.custumWhite {
+  color: white;
+}
+
+.footer_container {
+  /* border: 2px solid red; */
+  height: 80px;
+  padding-top: 20px;
+  font-size: 17px;
+  /* justify-content: space-around; */
+}
+
+.contact_section {
+  /* border: 2px solid red; */
+
+}
+
+.tagLine {
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 5px;
+  font-size: 30px;
+
+}
+
+.instructionBody {
+  font-family: 'Zilla Slab', serif;
+}
+
+.custumBorder {
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.2) inset;
 }

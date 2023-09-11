@@ -1,0 +1,52 @@
+
+.video-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#myVideo {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/* main all */
+.content{
+    position: absolute;
+    top: 52%;
+    left: 15%;
+    font-size: 30px;
+    /* color: aliceblue; */
+    font-family: 'Bungee Spice', cursive;
+}
+
+/* transition */
+
+/* Add CSS transitions for the content */
+.content {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .content.show {
+    opacity: 1;
+  }
+  
+  .content.hide {
+    opacity: 0;
+  }
+  
+
+
+  
