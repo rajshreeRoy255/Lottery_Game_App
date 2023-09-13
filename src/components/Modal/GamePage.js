@@ -46,27 +46,45 @@ const GamePage = () => {
 
   // !  D  A  T E    AND    T  I  M  E  
   // ! Time
-  const currentDateAndTime = new Date();
-  function formatTime12Hour(date) {
-    const hours = date.getHours();
-    const minutes = String(date.getMinutes()).padStart(2, '0');
-    const amOrPm = hours >= 12 ? 'PM' : 'AM';
-    const twelveHourFormat = (hours % 12) || 12; // Convert to 12-hour format
 
-    return `${twelveHourFormat}:${minutes} ${amOrPm}`;
+  function getCurrentTimeWithAMPM() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let ampm = "AM";
+
+    // Convert 24-hour time to 12-hour time and set AM/PM
+    if (hours >= 12) {
+      ampm = "PM";
+      if (hours > 12) {
+        hours -= 12;
+      }
+    }
+
+    // Ensure that hours and minutes are displayed with leading zeros if needed
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+
+    const currentTimeWithAMPM = hours + ":" + minutes + " " + ampm;
+    return currentTimeWithAMPM;
   }
-  const formattedTime = formatTime12Hour(currentDateAndTime);
 
+  const currentTime = getCurrentTimeWithAMPM();
+  // console.log(`current time --->${currentTime}`); // Example output: "02:30 PM"
 
   // !date
-  const dateFormatter = new Intl.DateTimeFormat('en', {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-  });
-  const formattedDate = dateFormatter.format(currentDateAndTime);
-  // console.log(`Date & Time: ${formattedDate}, ${formattedTime}`);
 
+  // todo 
+  const date = new Date();
+
+  const year = date.getFullYear();
+  let month = date.getMonth();
+  const d = date.getDate();
+  month += 1;
+
+  const myDateForm = `${d}/${month}/${year}`
+  // console.log(`new date--->${myDateForm}`);
+  // todo 
   // !  D  A  T E    AND    T  I  M  E    ends-----------
 
 
@@ -444,8 +462,8 @@ const GamePage = () => {
     if (plAScore === targetScore) {
       const obj1 = {
         id: objId,
-        date: formattedDate,
-        time: formattedTime,
+        date: myDateForm,
+        time: currentTime,
         Your_score: plAScore,
         opponent_Score: plBScore,
         winner: "Blue",
@@ -461,8 +479,8 @@ const GamePage = () => {
     } else if (plBScore === targetScore) {
       const obj2 = {
         id: objId,
-        date: formattedDate,
-        time: formattedTime,
+        date: myDateForm,
+        time: currentTime,
         Your_score: plAScore,
         opponent_Score: plBScore,
         winner: "Red",
